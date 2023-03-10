@@ -14,10 +14,11 @@ header {
 }
 
 body {
-    /* background-image: url('./images/hacking.png');
+    background-image: url('./images/hacking.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
     text-align: center;
     color: whitesmoke;
     font-size: x-large;
