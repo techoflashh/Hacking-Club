@@ -1,25 +1,13 @@
-@font-face {
-    font-family: 'hackedregular';
-    src: url('./fonts/hacked-kerx-webfont.woff2') format('woff2'),
-         url('./fonts/hacked-kerx-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face { font-family: GreenHouse;
+    src: url('./fonts/GREENHOUSEGAS.TTF'); 
 }
 
 header {
-    text-align: center;
-    font-size: 40px;
-    font-family: hackedregular;
     color: rgb(100, 255,0);
 }
 
 body {
-    background-image: url('./images/hacking.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    backdrop-filter: blur(5px);
-    text-align: center;
+    background-color: black;
     color: whitesmoke;
     font-size: x-large;
 }
