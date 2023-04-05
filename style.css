@@ -2,9 +2,15 @@
     src: url('./fonts/GREENHOUSEGAS.TTF'); 
 }
 
-header {
-    color: rgb(100, 255,0);
+@font-face { font-family: BurgerGreen;
+    src: url('./fonts/BurgerGreen-MVGpB.otf'); 
 }
+
+@font-face { font-family: BuyanForest;
+    src: url('./fonts/BuyanForest-Yz0jy.otf'); 
+}
+
+
 
 body {
     background-color: black;
@@ -12,3 +18,122 @@ body {
     font-size: x-large;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    background-color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 1;
+    /* box-shadow: 0px 1px 5px #BC6FF1; */
+}
+
+nav ul {
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    /* font-family: BuyanForest; */
+    display: inline-block;
+    margin: 0 10px;
+    padding: 20px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    right: 4%;
+    margin-left: 5%;
+    padding: px 0;
+}
+
+.logo img {
+    height: 60px;
+    width: 62px;
+    /* filter: invert(100%); */
+    transition: opacity .8s;
+
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.logo img.logo_hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+nav:hover img.logo_hover {
+    opacity: 1;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav:hover img.logo_main {
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.logo h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 0%;
+    vertical-align: top;
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(100, 255,0);
+}
+
+/* selected link */
+a:active {
+    color: rgb(100, 255,0);
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(100, 255,0);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s ease;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
