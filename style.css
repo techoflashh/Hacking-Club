@@ -1,13 +1,16 @@
-@font-face { font-family: GreenHouse;
-    src: url('./fonts/GREENHOUSEGAS.TTF'); 
+@font-face {
+    font-family: GreenHouse;
+    src: url('./fonts/GREENHOUSEGAS.TTF');
 }
 
-@font-face { font-family: BurgerGreen;
-    src: url('./fonts/BurgerGreen-MVGpB.otf'); 
+@font-face {
+    font-family: BurgerGreen;
+    src: url('./fonts/BurgerGreen-MVGpB.otf');
 }
 
-@font-face { font-family: BuyanForest;
-    src: url('./fonts/BuyanForest-Yz0jy.otf'); 
+@font-face {
+    font-family: BuyanForest;
+    src: url('./fonts/BuyanForest-Yz0jy.otf');
 }
 
 
@@ -25,10 +28,9 @@ nav {
     width: 100%;
     height: max-content;
     background-color: black;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    /* padding-top: 1%;
+    padding-bottom: 1%; */
     z-index: 1;
-    /* box-shadow: 0px 1px 5px #BC6FF1; */
 }
 
 nav ul {
@@ -55,18 +57,15 @@ nav a {
 
 .logo {
     float: left;
-    position: relative;
+    position:relative;
     right: 4%;
     margin-left: 5%;
-    padding: px 0;
 }
 
 .logo img {
     height: 60px;
-    width: 62px;
-    /* filter: invert(100%); */
+    width: 60px;
     transition: opacity .8s;
-
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -97,7 +96,7 @@ nav:hover img.logo_main {
 .logo h1 {
     display: inline-block;
     margin: 0;
-    padding: 15px 10px;
+    padding: 15px;
     font-size: 30px;
     font-weight: 900;
     margin-left: 0%;
@@ -108,26 +107,26 @@ a:link {
     color: white;
 }
 
-/* visited link */
+
 a:visited {
     color: white;
 }
 
-/* mouse over link */
+
 a:hover {
-    color: rgb(100, 255,0);
+    color: rgb(100, 255, 0);
 }
 
-/* selected link */
+
 a:active {
-    color: rgb(100, 255,0);
+    color: rgb(100, 255, 0);
 }
 
 nav a::after {
     content: "";
     width: 0%;
     height: 3px;
-    background-color: rgb(100, 255,0);
+    background-color: rgb(100, 255, 0);
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -137,3 +136,74 @@ nav a::after {
 nav a:hover:after {
     width: 100%;
 }
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+p {
+    color: white;
+}
+
+
+.footer {
+    background: #000;
+    padding: 0px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+ 
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+/*
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+} */
+
+/* @media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+} */
